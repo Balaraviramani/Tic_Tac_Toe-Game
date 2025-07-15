@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div class="container">
+         <h1>Tic Tac Toe</h1>
+         <div class="score">
+            <p>User 1: <span id="user1">0</span></p>
+            <p>User 2: <span id="user2">0</span></p>
+            <p>Ties: <span id="tie">0</span></p>
+         </div>
+        <div class="board">
+            <button class="cell" onclick="check(event)" value="" id="btn-1"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-2"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-3"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-4"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-5"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-6"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-7"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-8"></button>
+            <button class="cell" onclick="check(event)" value="" id="btn-9"></button>
+        </div>
+        <div class="game_control">
+            <button id="new_game" onclick="newgame()"> New game</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        <div class="display" id="dis"> Winner is <span id="winner"></span></div>
+        <script src="tictactoe.js"></script>
+    </div>
+</body>
+</html>
